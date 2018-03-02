@@ -29,26 +29,37 @@
     <body id="page-top">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="position: relative"id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <div class="nav-background">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-nav" id="mainNav">
+            <div class="container-fluid">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
+                    <ul class="navbar-nav text-uppercase mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Our Story</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                            <a class="nav-link js-scroll-trigger" href="#about">Menu</a>
+                        </li>
+                    </ul>
+                    <div class="mx-auto order-0">
+                        <ul class="nav navbar-nav mx-auto">
+                            <li class="nav-item"><a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/MommaFung1.png" id="navImage"></a></li>
+                        </ul>
+                    </div>
+                    <ul class="navbar-nav text-uppercase mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="catering.html">Catering</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                            <a class="nav-link js-scroll-trigger" href="#contact">Merchandise</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -58,284 +69,100 @@
             </div>
         </nav>
 
-        <!-- Filter  -->
-        <div class="menu-selection">
-            <div class="menu-download">
-                <button type="button" class="btn btn-secondary">Download Menu</button>
+        <div class="menu-container">
+            <h1 class="menu-title">Menu</h1>
+            <!-- Menu -->
+            <div class="container menu-images">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/menu/vege-bun.jpg">
+                        <p><strong>Sun-kissed Veggie Bun</strong><br/>Seven different kinds of mushrooms cooked in a house sauce.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/menu/pork-bun.jpg">
+                        <p><strong>Uni-Pork Bun</strong> <br/>Our original unicorn bun! BBQ Pork marinated in a special home-made sauce.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/menu/vege-bun.jpg">
+                        <p><strong>Cosmic Chicken Curry Bun</strong><br/>Potatoes and Chicken cooked in a yellow curry sauce. Vegetarian option available.</p>
+                    </div>
+                </div>
             </div>
-            <div class="menu-filter">
-                <button id="buns" type="button" class="btn btn-secondary">Buns</button>
-                <button id="dumplings" type="button" class="btn btn-secondary">Dumplings</button>
-                <button id="vegetarian" type="button" class="btn btn-secondary">Vegetarian</button>
+            <!-- Filter  -->
+            <div class="menu-selection">
+                <div class="menu-download">
+                    <button type="button" class="btn btn-secondary">Download Menu as PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery  -->
+        <div class="gallery-container">
+            <h1 class="menu-title">Gallery</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/menu/gallery1.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/menu/gallery2.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/menu/gallery3.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/menu/vege-bun.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/menu/pork-bun.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/menu/gallery1.jpg">
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <!-- Menu Slider -->
-        <header class="all-slide">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>First Slide</h3>
-                            <p>This is a description for the first slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second Slide</h3>
-                            <p>This is a description for the second slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Third Slide</h3>
-                            <p>This is a description for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </header>
-        <header class="bun-slide">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>First Slide</h3>
-                            <p>This is a description for the first slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second Slide</h3>
-                            <p>This is a description for the second slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Third Slide</h3>
-                            <p>This is a description for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </header>
-        <header class="dumpling-slide">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>First Slide</h3>
-                            <p>This is a description for the first slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second Slide</h3>
-                            <p>This is a description for the second slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Third Slide</h3>
-                            <p>This is a description for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </header>
-        <header class="vegetarian-slide">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>First Slide</h3>
-                            <p>This is a description for the first slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second Slide</h3>
-                            <p>This is a description for the second slide.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Third Slide</h3>
-                            <p>This is a description for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </header>
-
-        <!-- Portfolio Grid -->
-        <section class="bg-light" id="portfolio">
+        <!-- Footer -->
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Gallery</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; Your Website 2018</span>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Threads</h4>
-                            <p class="text-muted">Illustration</p>
-                        </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Explore</h4>
-                            <p class="text-muted">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Finish</h4>
-                            <p class="text-muted">Identity</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Lines</h4>
-                            <p class="text-muted">Branding</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Southwest</h4>
-                            <p class="text-muted">Website Design</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Window</h4>
-                            <p class="text-muted">Photography</p>
-                        </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-
-        <!-- Footer -->
-
+        </footer>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
@@ -351,7 +178,6 @@
         <!-- Custom scripts for this template -->
         <script src="js/agency.min.js"></script>
         <script src="js/menu.js"></script>
-
     </body>
 
 </html>
