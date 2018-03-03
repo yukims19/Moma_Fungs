@@ -106,7 +106,7 @@ img::-moz-selection {
             max-width: 100%;
             margin-left: 2.5vw;
             text-align: center; !important
-            
+
         }
 
 #mainNav .navbar-toggler {
@@ -141,15 +141,27 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
+.nav-background{
+    height: 130px;
+    width: 100%;
+    background-color: pink;
+}
+@media (max-width:990px){
+    .nav-background{
+        display: none;
+    }
+}
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
+      padding-top: 25px;
+      position: fixed;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
+    background-color: transparent;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -719,7 +731,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
         height: 100%;
         overflow:hidden;
         text-align:center;
-        padding: 0; 
+        padding: 0;
         position:relative;
 }
 
@@ -779,7 +791,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     overflow: hidden;
     border-radius: 50%;
     border:10px solid #ffd1dc;
-    
+
 }
 
 .aboutimg{
